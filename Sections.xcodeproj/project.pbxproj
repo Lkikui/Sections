@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC317C06201EB8CC006D0B5F /* FormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC317C05201EB8CC006D0B5F /* FormVC.swift */; };
+		CC317C08201EC0E8006D0B5F /* FormVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC317C07201EC0E8006D0B5F /* FormVCDelegate.swift */; };
 		CCFB4E3C201B088E00C274F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFB4E3B201B088E00C274F2 /* AppDelegate.swift */; };
-		CCFB4E3E201B088E00C274F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFB4E3D201B088E00C274F2 /* ViewController.swift */; };
+		CCFB4E3E201B088E00C274F2 /* QuoteVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCFB4E3D201B088E00C274F2 /* QuoteVC.swift */; };
 		CCFB4E41201B088E00C274F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCFB4E3F201B088E00C274F2 /* Main.storyboard */; };
 		CCFB4E44201B088E00C274F2 /* Sections.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CCFB4E42201B088E00C274F2 /* Sections.xcdatamodeld */; };
 		CCFB4E46201B088E00C274F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCFB4E45201B088E00C274F2 /* Assets.xcassets */; };
@@ -35,9 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC317C05201EB8CC006D0B5F /* FormVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormVC.swift; sourceTree = "<group>"; };
+		CC317C07201EC0E8006D0B5F /* FormVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormVCDelegate.swift; sourceTree = "<group>"; };
 		CCFB4E38201B088E00C274F2 /* Sections.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sections.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCFB4E3B201B088E00C274F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CCFB4E3D201B088E00C274F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CCFB4E3D201B088E00C274F2 /* QuoteVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteVC.swift; sourceTree = "<group>"; };
 		CCFB4E40201B088E00C274F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CCFB4E43201B088E00C274F2 /* Sections.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Sections.xcdatamodel; sourceTree = "<group>"; };
 		CCFB4E45201B088E00C274F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -100,12 +104,14 @@
 			isa = PBXGroup;
 			children = (
 				CCFB4E3B201B088E00C274F2 /* AppDelegate.swift */,
-				CCFB4E3D201B088E00C274F2 /* ViewController.swift */,
 				CCFB4E3F201B088E00C274F2 /* Main.storyboard */,
-				CCFB4E45201B088E00C274F2 /* Assets.xcassets */,
+				CCFB4E3D201B088E00C274F2 /* QuoteVC.swift */,
+				CC317C05201EB8CC006D0B5F /* FormVC.swift */,
+				CC317C07201EC0E8006D0B5F /* FormVCDelegate.swift */,
 				CCFB4E47201B088E00C274F2 /* LaunchScreen.storyboard */,
-				CCFB4E4A201B088E00C274F2 /* Info.plist */,
 				CCFB4E42201B088E00C274F2 /* Sections.xcdatamodeld */,
+				CCFB4E45201B088E00C274F2 /* Assets.xcassets */,
+				CCFB4E4A201B088E00C274F2 /* Info.plist */,
 			);
 			path = Sections;
 			sourceTree = "<group>";
@@ -262,7 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCFB4E3E201B088E00C274F2 /* ViewController.swift in Sources */,
+				CC317C06201EB8CC006D0B5F /* FormVC.swift in Sources */,
+				CC317C08201EC0E8006D0B5F /* FormVCDelegate.swift in Sources */,
+				CCFB4E3E201B088E00C274F2 /* QuoteVC.swift in Sources */,
 				CCFB4E44201B088E00C274F2 /* Sections.xcdatamodeld in Sources */,
 				CCFB4E3C201B088E00C274F2 /* AppDelegate.swift in Sources */,
 			);
