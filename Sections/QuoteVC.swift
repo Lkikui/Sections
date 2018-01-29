@@ -78,6 +78,27 @@ class QuoteVC: UITableViewController, FormVCDelegate {
         dismiss(animated: true, completion: nil)
     }
     
+    //MARK: Remove item by swiping left
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        var quote: Quote
+        
+        if indexPath.section == 0 {
+            quote = favoritedQuotes[indexPath.row]
+        } else {
+            quote = quoteBank[indexPath.row]
+        }
+        
+        managedObjectContext.delete(quote)
+        do {
+            try managedObjectContext.save()
+        } catch {
+            print("\(error)")
+        }
+        
+        tableView.reloadData()
+        fetchAllItems()
+    }
+    
     func cancelButtonPressed(by controller: FormVC) {
         dismiss(animated: true, completion: nil)
     }
